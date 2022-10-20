@@ -1,0 +1,38 @@
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    padding: 10px 10px;
+
+    &__label {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    &__input {
+        margin: 2px 0;
+        padding: 5px;
+        font-size: 1rem;
+        border: 2px rgb(0, 0, 0) solid;
+        border-radius: 5px;
+        color: black;
+        width: 200px;
+}
+
+@media screen and (min-width: 992px) {
+    .search-box {
+        width: auto;
+        padding: 20px 100px;
+        }
+
+        &__label {
+            font-size: 2rem;
+        }
+
+        &__input {
+            font-size: 1.5rem;
+            width: 500px;
+        }
+    }
+}

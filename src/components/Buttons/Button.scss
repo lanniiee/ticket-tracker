@@ -1,0 +1,41 @@
+.positive {
+    border: 2px solid green;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    color: green;
+    
+}
+
+.negative {
+    border: 2px solid red;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    color: red;
+    text-align: center;
+}
+
+.positive:hover {
+    background-color: rgb(115, 255, 115);
+    opacity: 50%;
+    cursor: default; transform: rotate(360deg); 
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.negative:hover {
+    background-color: rgb(232, 38, 38);
+    opacity: 50%;
+    cursor: default; transform: rotate(360deg); 
+    transition: all 0.5s ease-in-out 0s;
+}
+
+@media screen and (min-width: 900px) {
+    .positive, .negative {
+        font-size: 2rem;
+        height: 40px;
+        width: 40px;
+    }
+}

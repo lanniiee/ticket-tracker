@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Button from "./components/Buttons/Button.jsx";
+import CardTile from "./components/CardTile/CardTile.jsx";
+import Counter from "./components/Counter/Counter.jsx";
+import team from './data/team.js';
+import SearchBox from './components/SearchBox/SearchBox.jsx';
+import {useState} from "react";
+import ExploreUser from './container/ExploreUser/ExploreUser';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title">Ticket Tracker</h1>
+      <ExploreUser users={team} />
     </div>
   );
 }

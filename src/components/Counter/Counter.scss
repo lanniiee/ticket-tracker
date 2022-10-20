@@ -1,0 +1,49 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 10px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.464);
+    .counter__title, .counter__display {
+        text-align: center;
+        padding: 5px;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 500px) {
+    .counter__display, .counter__title {
+        font-size: 1.1rem;
+    }
+
+    .buttons {
+        column-gap: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .counter {
+        margin-left: 50px;
+        margin-top: 10px;
+        height: 200px;
+        .counter__display, .counter__title {
+            font-size: 1.8rem;
+            padding: 15px;
+        }
+        .buttons {
+            column-gap: 60px;
+        }
+    }
+}
